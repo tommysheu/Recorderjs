@@ -46,6 +46,7 @@
   }
 
   function startRecording(button) {
+    audio_context.resume();
     recorder && recorder.record();
     button.disabled = true;
     button.nextElementSibling.disabled = false;
